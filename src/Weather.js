@@ -59,7 +59,12 @@ export default function Weather() {
       </div>
 
       <small>
-        <a className="git-link" href="" target="_blank" rel="noreferrer">
+        <a
+          className="git-link"
+          href="https://github.com/Ellino1s/react-weather-app"
+          target="_blank"
+          rel="noreferrer"
+        >
           Open-source code
         </a>
         , by Elina Sotska
