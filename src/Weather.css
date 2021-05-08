@@ -1,0 +1,29 @@
+.Weather .card {
+  border-radius: 30px;
+  text-align: center;
+}
+
+.Weather .card-text {
+  margin-top: 1.5rem;
+  font-size: 1.7rem;
+}
+
+.Weather .temperature {
+  font-size: 4rem;
+}
+
+.Weather .units {
+  position: relative;
+  font-size: 1rem;
+  top: -2.5rem;
+}
+
+.Weather .active {
+  color: #000;
+  cursor: default;
+}
+
+.Weather .city-input,
+.btn {
+  border-radius: 60px;
+}
