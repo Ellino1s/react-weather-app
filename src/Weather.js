@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
+import FormattedTime from "./FormattedTime";
 import "./Weather.css";
 
 export default function Weather(props) {
-  const [ready, setReady] = useState(false);
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
@@ -11,8 +12,8 @@ export default function Weather(props) {
       ready: true,
       city: response.data.name,
       temperature: response.data.main.temp,
-      date: "Friday, 23 April",
-      time: "15:00",
+      date: new Date(response.data.dt * 1000),
+      time: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       imgUrl: "https://ssl.gstatic.com/onebox/weather/64/rain_light.png",
       wind: response.data.wind.speed,
@@ -44,10 +45,14 @@ export default function Weather(props) {
             <h1 className="card-title">{weatherData.city}</h1>
             <div className="current-date row">
               <div className="col-6">
-                <p>{weatherData.date}</p>
+                <p>
+                  <FormattedDate date={weatherData.date} />
+                </p>
               </div>
               <div className="col-6">
-                <p>{weatherData.time}</p>
+                <p>
+                  <FormattedTime date={weatherData.time} />
+                </p>
               </div>
             </div>
             <img src={weatherData.imgUrl} alt={weatherData.description} />
