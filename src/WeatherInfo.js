@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
@@ -8,17 +9,17 @@ export default function WeatherInfo(props) {
       <h1 className="card-title">{props.data.city}</h1>
       <div className="current-date row">
         <div className="col-6">
-          <p>
+          <div>
             <FormattedDate date={props.data.date} />
-          </p>
+          </div>
         </div>
         <div className="col-6">
-          <p>
+          <div>
             <FormattedTime date={props.data.time} />
-          </p>
+          </div>
         </div>
       </div>
-      <img src={props.data.imgUrl} alt={props.data.description} />
+      <WeatherIcon code={props.data.icon} />
       <p className="card-text text-capitalize">{props.data.description}</p>
       <strong className="temperature">
         {Math.round(props.data.temperature)}

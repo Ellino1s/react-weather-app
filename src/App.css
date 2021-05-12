@@ -8,7 +8,7 @@
   font-weight: 900;
 }
 
-.App p {
+.App div {
   font-size: 1.2rem;
   font-weight: 100;
 }
@@ -17,6 +17,6 @@
   text-decoration: none;
 }
 
-.App img {
-  width: 25%;
+.App canvas {
+  /* width: 25%; */
 }
