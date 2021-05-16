@@ -8,15 +8,16 @@
   font-weight: 900;
 }
 
-.App div {
-  font-size: 1.2rem;
+.App .forecast-info {
+  font-size: 1rem;
   font-weight: 200;
+}
+
+.App .forecast-info ul {
+  list-style: none;
 }
 
 .App a {
   text-decoration: none;
-}
-
-.App canvas {
-  /* width: 25%; */
+  color: #4a9cf1;
 }

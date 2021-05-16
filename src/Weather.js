@@ -64,18 +64,6 @@ export default function Weather(props) {
             <WeatherForecast coordinates={weatherData.coordinates} />
           </div>
         </div>
-
-        <small>
-          <a
-            className="git-link"
-            href="https://github.com/Ellino1s/react-weather-app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Open-source code
-          </a>
-          , by Elina Sotska
-        </small>
       </div>
     );
   } else {

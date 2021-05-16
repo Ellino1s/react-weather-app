@@ -4,18 +4,19 @@
 }
 
 .Weather .card-text {
-  margin-top: 1.5rem;
-  font-size: 1.7rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
 .Weather .temperature {
-  font-size: 4rem;
+  font-size: 5.5rem;
 }
 
 .Weather .units {
   position: relative;
-  font-size: 1rem;
-  top: -2.5rem;
+  font-size: 1.2rem;
+  top: -3.5rem;
 }
 
 .Weather .active {
